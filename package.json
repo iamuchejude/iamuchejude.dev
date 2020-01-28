@@ -1,0 +1,33 @@
+{
+  "name": "iamuchejude.dev",
+  "version": "1.0.0",
+  "description": "Personal website and blog",
+  "scripts": {
+    "develop": "frontity dev",
+    "build": "frontity build",
+    "serve": "frontity serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamuchejude/iamuchejude.dev.git"
+  },
+  "keywords": [
+    "frontity",
+    "wordpress",
+    "personal",
+    "blog",
+    "portfolio"
+  ],
+  "author": "Uche Jude <iamuchejude@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iamuchejude/iamuchejude.dev/issues"
+  },
+  "homepage": "https://github.com/iamuchejude/iamuchejude.dev#readme",
+  "dependencies": {
+    "@frontity/core": "^1.4.1",
+    "@frontity/tiny-router": "^1.0.18",
+    "babel-plugin-frontity": "^1.0.1",
+    "frontity": "^1.4.4"
+  }
+}
