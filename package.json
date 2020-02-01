@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Personal website and blog",
   "scripts": {
-    "develop": "frontity dev",
+    "dev": "frontity dev",
     "build": "frontity build",
     "serve": "frontity serve"
   },
@@ -27,7 +27,9 @@
   "dependencies": {
     "@frontity/core": "^1.4.1",
     "@frontity/tiny-router": "^1.0.18",
+    "@frontity/wp-source": "^1.5.0",
     "babel-plugin-frontity": "^1.0.1",
-    "frontity": "^1.4.4"
+    "frontity": "^1.4.4",
+    "raditian-theme": "./packages/raditian-theme"
   }
 }
