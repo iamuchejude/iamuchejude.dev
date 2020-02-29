@@ -1,0 +1,10 @@
+{
+  "alias": "www.iamuchejude.dev",
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@frontity/now"
+    }
+  ]
+}
