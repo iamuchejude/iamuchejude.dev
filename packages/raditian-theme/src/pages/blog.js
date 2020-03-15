@@ -1,14 +1,15 @@
 import React from 'react';
-import { styled, connect } from 'frontity';
+import { styled } from 'frontity';
 
-const Blog = ({ state }) => {
+const Blog = () => {
   return (
     <Container>
-      <h1>Hello</h1>
+      <h1>Blog</h1>
+      <a href="/home/">Go to home</a>
     </Container>
   )
 };
 
 const Container = styled.section``;
 
-export default connect(Blog);
+export default Blog;

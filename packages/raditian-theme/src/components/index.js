@@ -1,25 +1,57 @@
 import React from 'react';
-import { styled } from 'frontity';
+import { styled, connect, Global, css } from 'frontity';
 
-import Index from '../pages/index';
+import styles from '../styles';
 
+import Home from '../pages/home';
+import Blog from '../pages/blog';
+import Error from '../pages/error';
+
+import Loading from './loading';
 import Header from './header';
 import Footer from './footer';
 
-const Theme = () => {
+const Theme = ({ state }) => {
+  const data = state.source.get(state.router.link);
+
   return (
     <Wrapper>
+      <Global styles={styles} />
+
+      <BackgroundText>EAT.SLEEP.CODE</BackgroundText>
       <Header />
       <Main>
-        <Index />
+        {
+          data.isFetching && <Loading /> ||
+          state.router.link === '/' && <Home /> ||
+          data.isArchive && <Blog /> ||
+          data.isError && <Error />
+        }
       </Main>
       <Footer />
     </Wrapper>
   );
 };
 
-const Wrapper = styled.div``;
+const Wrapper = styled.div`
+  position: relative;
+`;
 
-const Main = styled.main``;
+const Main = styled.main`
+  height: 1000px;
+  margin-top: 4.5rem;
+`;
 
-export default Theme;
+const BackgroundText = styled.h1`
+  font-size: 8em;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.04);
+  transform: rotate(-90deg);
+  position: fixed;
+  opacity: 1;
+  z-index: -2;
+  top: 3.5em;
+  left: -3em;
+`;
+
+export default connect(Theme);

@@ -3,13 +3,14 @@ const settings = {
   state: {
     frontity: {
       url: "http://localhost:3000",
-      title: "Raditian",
-      description: "Raditian Theme"
+      title: "Uche Jude",
+      description: "Personal Website and Blog"
     }
   },
   packages: [
     'raditian-theme',
     '@frontity/tiny-router',
+    '@frontity/html2react',
     {
       name: '@frontity/wp-source',
       state: {
