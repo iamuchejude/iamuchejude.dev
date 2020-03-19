@@ -14,7 +14,6 @@ const Contact = () => {
           <Form>
 
             <Row>
-
               <InputGroup>
                 <Label>Your Name</Label>
                 <Input
@@ -30,8 +29,8 @@ const Contact = () => {
                   placeholder="Enter your email address"
                 />
               </InputGroup>
-
             </Row>
+
             <InputGroup>
               <Label>Your Message</Label>
               <TextArea
@@ -76,10 +75,12 @@ const Heading = styled.div`
 
 const Title = styled.h2`
   font-weight: bold;
-  font-size: 1.7em;
+  font-size: 1.5em;
 `;
 
-const Description = styled.p``;
+const Description = styled.p`
+  margin-top: 0.1em;
+`;
 
 const FormContainer = styled.div`
   padding: 0 3em;
@@ -100,7 +101,7 @@ const Row = styled.div`
 
 const Label = styled.label`
   display: block;
-  margin-bottom: .5em;
+  margin-bottom: .3em;
   font-size: .8em;
   color: rgba(20, 22, 24, 0.33);
 `;
@@ -116,10 +117,12 @@ const inputStyles = css`
   border-bottom: 1px solid var(--primary-color);
   padding: 10px 0;
   outline: none;
+  font-size: .8em;
+  color: var(--primary-color);
 
   &::placeholder {
     color: rgba(20, 22, 24, 0.62);
-    font-size: 1.2em;
+    font-size: .7rem;
   }
 `;
 

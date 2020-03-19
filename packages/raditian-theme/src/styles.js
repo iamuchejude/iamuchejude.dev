@@ -1,6 +1,6 @@
 import { css } from"frontity";
 
-const primaryColor = "#141618";
+const primaryColor = "#0C0D02";
 
 const variables = css`
   :root {
@@ -13,7 +13,7 @@ const resets = css`
 
   html {
     box-sizing: border-box;
-    font-size: 18px;
+    font-size: 20px;
     font-family: 'Inconsolata', monospace;
   }
 
@@ -38,6 +38,7 @@ const resets = css`
 
   a {
     text-decoration: none;
+    font-weight: bold;
   }
 `;
 

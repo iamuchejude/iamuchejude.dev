@@ -1,5 +1,5 @@
 import React from 'react';
-import { styled, connect, Global, css } from 'frontity';
+import { styled, connect, Global } from 'frontity';
 
 import styles from '../styles';
 
@@ -17,7 +17,6 @@ const Theme = ({ state }) => {
   return (
     <Wrapper>
       <Global styles={styles} />
-
       <BackgroundText>EAT.SLEEP.CODE</BackgroundText>
       <Header />
       <Main>
@@ -39,18 +38,18 @@ const Wrapper = styled.div`
 
 const Main = styled.main`
   height: 1000px;
-  margin-top: 4.5rem;
+  margin-top: 5rem;
 `;
 
 const BackgroundText = styled.h1`
-  font-size: 8em;
+  font-size: 19em;
   font-weight: bold;
   color: rgba(0, 0, 0, 0.04);
   transform: rotate(-90deg);
   position: fixed;
   opacity: 1;
   z-index: -2;
-  top: 3.5em;
+  top: 3.3em;
   left: -3em;
 `;
 

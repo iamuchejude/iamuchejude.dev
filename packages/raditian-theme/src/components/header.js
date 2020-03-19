@@ -17,7 +17,7 @@ const Header = () => (
 );
 
 const Container = styled.header`
-  height: 4.5rem;
+  height: 5rem;
   top: 0;
   position: fixed;
   z-index: 2;
@@ -51,7 +51,6 @@ const LogoContainer = styled.div`
 const MenuContainer = styled.div``;
 
 const MenuIcon = styled.a`
-  margin: 1em;
   width: 38px;
   cursor: pointer;
 
@@ -79,7 +78,7 @@ const MenuIcon = styled.a`
     content: '';
     display: block;
     height: 2px;
-    margin: 2.5px 0;
+    margin: 2.3px 0;
     transition: all .2s ease-in-out;
     float: right;
   }

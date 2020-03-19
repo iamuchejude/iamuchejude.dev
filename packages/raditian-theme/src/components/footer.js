@@ -1,7 +1,7 @@
 import { styled, connect } from 'frontity';
 import Contact from './contact';
 
-const Footer = ({ state }) => (
+const Footer = () => (
   <Section>
     <Contact />
     
