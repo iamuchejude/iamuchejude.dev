@@ -11,11 +11,29 @@ import Loading from './loading';
 import Header from './header';
 import Footer from './footer';
 
+const HeadTags = ({ tags }) => (
+  <>
+    {tags.map((tag, index) => {
+      if (tag.tag === "title") {
+        return <title key={index}>{tag.content}</title>
+      }
+
+      if (tag.tag === "link") {
+        return <link key={index} {...tag.attributes} />;
+      }
+
+      return <meta key={index} {...tag.attributes} />;
+    })}
+  </>
+);
+
 const Theme = ({ state }) => {
   const data = state.source.get(state.router.link);
+  const headTags = state.headTags.get(state.router.link);
 
   return (
     <Wrapper>
+      <HeadTags tags={headTags} />
       <Global styles={styles} />
       <BackgroundText>EAT.SLEEP.CODE</BackgroundText>
       <Header />

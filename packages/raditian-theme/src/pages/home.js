@@ -1,13 +1,32 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { styled, connect } from 'frontity';
 
-import me from '../images/me.svg';
 import dots from '../images/dots.svg';
+
+const Project = () => (
+	<ProjectContainer>
+		<h1>Hey</h1>
+	</ProjectContainer>
+);
 
 const Home = ({ state, libraries }) => {
 	const data = state.source.get(state.router.link);
 	const HTML2React = libraries.html2react.Component;
 	const page = state.source.page[data.id];
+	
+
+	useEffect(() => {
+		const isBrowser = typeof window !== "undefined";
+
+		if (isBrowser) {
+			// const projectCollection = window.document.querySelector(".row__collection");
+
+			// if (!!projectCollection) {
+			// 	projectCollection.innerText("Projects will go in here");
+			// }
+		}
+
+	}, []);
 
   return (
 		<Container>
@@ -15,6 +34,8 @@ const Home = ({ state, libraries }) => {
 		</Container>
 	);
 };
+
+const ProjectContainer = styled.div``;
 
 const Container = styled.section`
 	.hero {
@@ -55,7 +76,11 @@ const Container = styled.section`
 							background-origin: initial;
 							background-clip: initial;
 							background-color: initial;
-							background-image: linear-gradient(120deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
+							background-image: linear-gradient(
+								120deg,
+								rgba(0, 0, 0, 0.2) 0%,
+								rgba(0, 0, 0, 0.2) 100%
+							);
 							position: relative;
 							background-size: 98% 0.3em;
 							padding: 0px;
@@ -73,7 +98,7 @@ const Container = styled.section`
 
 				p {
 					line-height: 30px;
-					margin-top: .8em;
+					margin-top: 0.8em;
 
 					&:first-of-type {
 						margin-top: 2em;
@@ -82,7 +107,6 @@ const Container = styled.section`
 			}
 
 			.hero-image {
-
 				.hero-image-bg {
 					width: 350px;
 					background: url(${dots});
@@ -94,6 +118,35 @@ const Container = styled.section`
 						transform: translate(15%, -10%);
 					}
 				}
+			}
+		}
+	}
+
+	.projects > div {
+		width: 900px;
+		margin: 0 auto;
+
+		.projects__row > div {
+			display: flex;
+			flex-direction: row;
+
+			.row__heading {
+				width: 16rem;
+
+				h3 {
+					font-weight: bold;
+					font-size: 1.5em;
+				}
+
+				p {
+					font-size: 0.7em;
+					margin-top: .5em;
+				}
+			}
+
+			.row__collection {
+				width: 100%;
+				padding-left: 0.5em;
 			}
 		}
 	}
