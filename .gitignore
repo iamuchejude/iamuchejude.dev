@@ -105,3 +105,6 @@ dist
 
 # Frontity file
 build/
+.now
+
+.vscode/
