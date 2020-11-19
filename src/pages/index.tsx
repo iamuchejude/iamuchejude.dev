@@ -1,7 +1,8 @@
-import React from "react"
+import React, { FC } from 'react';
+import Layout from '../components/layout';
 
-const Index: React.FC<{}> = () => {
-  return <h1>Hello, Stevelash</h1>
-}
+const Index: FC = () => {
+  return <Layout>Hello, Stevelash</Layout>;
+};
 
-export default Index
+export default Index;
