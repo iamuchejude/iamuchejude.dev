@@ -16,7 +16,7 @@
     "develop": "frontity dev",
     "build": "frontity build",
     "serve": "frontity serve",
-    "format": "prettier --write \"**/*.{js,ts,json}\""
+    "format": "prettier --write \"**/*.{ts,tsx,json}\""
   },
   "dependencies": {
     "frontity": "^1.13.0",
@@ -24,7 +24,7 @@
     "@frontity/wp-source": "^1.10.0",
     "@frontity/tiny-router": "^1.2.3",
     "@frontity/html2react": "^1.5.0",
-    "@frontity/mars-theme": "./packages/mars-theme"
+    "@iamuchejude/website-theme": "./packages/website-theme"
   },
   "devDependencies": {
     "prettier": "^2.2.1"

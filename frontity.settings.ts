@@ -4,35 +4,18 @@ const settings: Settings = {
   name: 'iamuchejude.dev',
   state: {
     frontity: {
-      url: 'https://test.frontity.org',
-      title: 'Test Frontity Blog',
-      description: 'WordPress installation for Frontity development',
+      url: 'https://iamuchejude.dev',
+      title: 'Website',
+      description: "Jude's website",
     },
   },
   packages: [
-    {
-      name: '@frontity/mars-theme',
-      state: {
-        theme: {
-          menu: [
-            ['Home', '/'],
-            ['Nature', '/category/nature/'],
-            ['Travel', '/category/travel/'],
-            ['Japan', '/tag/japan/'],
-            ['About Us', '/about-us/'],
-          ],
-          featured: {
-            showOnList: false,
-            showOnPost: false,
-          },
-        },
-      },
-    },
+    { name: '@iamuchejude/website-theme' },
     {
       name: '@frontity/wp-source',
       state: {
         source: {
-          url: 'https://test.frontity.org',
+          url: 'http://iamuchejude.local',
         },
       },
     },
