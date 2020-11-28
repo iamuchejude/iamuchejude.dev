@@ -1,6 +1,6 @@
-import React, { useEffect } from "react";
-import { connect, styled } from "frontity";
-import Link from "../link";
+import React, { useEffect } from 'react';
+import { connect, styled } from 'frontity';
+import Link from '../link';
 
 /**
  * Pagination Component
@@ -28,7 +28,7 @@ const Pagination = ({ state, actions }) => {
         </Link>
       )}
 
-      {previous && next && " - "}
+      {previous && next && ' - '}
 
       {/* If there's a previous page, render this link */}
       {previous && (

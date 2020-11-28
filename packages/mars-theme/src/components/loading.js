@@ -1,5 +1,5 @@
-import React from "react";
-import { styled, keyframes, css } from "frontity";
+import React from 'react';
+import { styled, keyframes, css } from 'frontity';
 
 const scale = keyframes`
   0% {transform: scaley(1.0)}

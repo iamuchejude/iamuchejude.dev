@@ -1,12 +1,12 @@
-import React from "react";
-import { Global, css, connect, styled, Head } from "frontity";
-import Switch from "@frontity/components/switch";
-import Header from "./header";
-import List from "./list";
-import Post from "./post";
-import Loading from "./loading";
-import Title from "./title";
-import PageError from "./page-error";
+import React from 'react';
+import { Global, css, connect, styled, Head } from 'frontity';
+import Switch from '@frontity/components/switch';
+import Header from './header';
+import List from './list';
+import Post from './post';
+import Loading from './loading';
+import Title from './title';
+import PageError from './page-error';
 
 /**
  * Theme is the root React component of our theme. The one we will export
@@ -21,7 +21,10 @@ const Theme = ({ state }) => {
       {/* Add some metatags to the <head> of the HTML. */}
       <Title />
       <Head>
-        <meta name="description" content={state.frontity.description} />
+        <meta
+          name="description"
+          content={state.frontity.description}
+        />
         <html lang="en" />
       </Head>
 
@@ -53,8 +56,8 @@ export default connect(Theme);
 const globalStyles = css`
   body {
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-      "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+      'Droid Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   }
   a,
   a:visited {

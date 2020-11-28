@@ -1,7 +1,7 @@
-import React from "react";
-import { connect, styled, decode } from "frontity";
-import Item from "./list-item";
-import Pagination from "./pagination";
+import React from 'react';
+import { connect, styled, decode } from 'frontity';
+import Item from './list-item';
+import Pagination from './pagination';
 
 const List = ({ state }) => {
   // Get the data of the current list.
@@ -12,7 +12,7 @@ const List = ({ state }) => {
       {/* If the list is a taxonomy, we render a title. */}
       {data.isTaxonomy && (
         <Header>
-          {data.taxonomy}:{" "}
+          {data.taxonomy}:{' '}
           <b>{decode(state.source[data.taxonomy][data.id].name)}</b>
         </Header>
       )}

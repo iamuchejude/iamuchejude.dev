@@ -1,6 +1,6 @@
-import React from "react";
-import { styled, connect } from "frontity";
-import Link from "./link";
+import React from 'react';
+import { styled, connect } from 'frontity';
+import Link from './link';
 
 const MenuModal = ({ state }) => {
   const { menu } = state.theme;
@@ -15,7 +15,9 @@ const MenuModal = ({ state }) => {
             <MenuLink
               key={name}
               link={link}
-              aria-current={state.router.link === link ? "page" : undefined}
+              aria-current={
+                state.router.link === link ? 'page' : undefined
+              }
             >
               {name}
             </MenuLink>
@@ -53,7 +55,7 @@ const MenuLink = styled(Link)`
     background-color: rgba(0, 0, 0, 0.05);
   }
   /* styles for active link */
-  &[aria-current="page"] {
+  &[aria-current='page'] {
     color: yellow;
     font-weight: bold;
     /* border-bottom: 4px solid yellow; */

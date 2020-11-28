@@ -1,5 +1,5 @@
-import React from "react";
-import { Head, connect, decode } from "frontity";
+import React from 'react';
+import { Head, connect, decode } from 'frontity';
 
 const Title = ({ state }) => {
   // Get data about the current URL.
@@ -15,7 +15,9 @@ const Title = ({ state }) => {
     const taxonomyCapitalized =
       taxonomy.charAt(0).toUpperCase() + taxonomy.slice(1);
     // 3. Render the proper title.
-    title = `${taxonomyCapitalized}: ${decode(name)} - ${state.frontity.title}`;
+    title = `${taxonomyCapitalized}: ${decode(name)} - ${
+      state.frontity.title
+    }`;
   } else if (data.isAuthor) {
     // Add titles to authors, like "Author: Jon Snow - Blog Name".
     // 1. Get the author entity from the state to get its name.
