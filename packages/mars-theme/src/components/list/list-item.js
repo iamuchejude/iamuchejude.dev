@@ -1,7 +1,7 @@
-import React from "react";
-import { connect, styled } from "frontity";
-import Link from "../link";
-import FeaturedMedia from "../featured-media";
+import React from 'react';
+import { connect, styled } from 'frontity';
+import Link from '../link';
+import FeaturedMedia from '../featured-media';
 
 /**
  * Item Component
@@ -18,7 +18,9 @@ const Item = ({ state, item }) => {
   return (
     <article>
       <Link link={item.link}>
-        <Title dangerouslySetInnerHTML={{ __html: item.title.rendered }} />
+        <Title
+          dangerouslySetInnerHTML={{ __html: item.title.rendered }}
+        />
       </Link>
 
       <div>
@@ -31,7 +33,7 @@ const Item = ({ state, item }) => {
           </StyledLink>
         )}
         <PublishDate>
-          {" "}
+          {' '}
           on <b>{date.toDateString()}</b>
         </PublishDate>
       </div>
@@ -46,7 +48,9 @@ const Item = ({ state, item }) => {
 
       {/* If the post has an excerpt (short summary text), we render it */}
       {item.excerpt && (
-        <Excerpt dangerouslySetInnerHTML={{ __html: item.excerpt.rendered }} />
+        <Excerpt
+          dangerouslySetInnerHTML={{ __html: item.excerpt.rendered }}
+        />
       )}
     </article>
   );

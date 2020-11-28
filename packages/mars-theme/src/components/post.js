@@ -1,8 +1,8 @@
-import React, { useEffect } from "react";
-import { connect, styled } from "frontity";
-import Link from "./link";
-import List from "./list";
-import FeaturedMedia from "./featured-media";
+import React, { useEffect } from 'react';
+import { connect, styled } from 'frontity';
+import Link from './link';
+import List from './list';
+import FeaturedMedia from './featured-media';
 
 const Post = ({ state, actions, libraries }) => {
   // Get information about the current URL.
@@ -23,7 +23,7 @@ const Post = ({ state, actions, libraries }) => {
    * the home page, everything is ready and it loads instantly.
    */
   useEffect(() => {
-    actions.source.fetch("/");
+    actions.source.fetch('/');
     List.preload();
   }, []);
 
@@ -31,7 +31,9 @@ const Post = ({ state, actions, libraries }) => {
   return data.isReady ? (
     <Container>
       <div>
-        <Title dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
+        <Title
+          dangerouslySetInnerHTML={{ __html: post.title.rendered }}
+        />
 
         {/* Only display author and date on posts */}
         {data.isPost && (
@@ -44,7 +46,7 @@ const Post = ({ state, actions, libraries }) => {
               </StyledLink>
             )}
             <DateWrapper>
-              {" "}
+              {' '}
               on <b>{date.toDateString()}</b>
             </DateWrapper>
           </div>
@@ -147,12 +149,12 @@ const Content = styled.div`
 
   /* Input fields styles */
 
-  input[type="text"],
-  input[type="email"],
-  input[type="url"],
-  input[type="tel"],
-  input[type="number"],
-  input[type="date"],
+  input[type='text'],
+  input[type='email'],
+  input[type='url'],
+  input[type='tel'],
+  input[type='number'],
+  input[type='date'],
   textarea,
   select {
     display: block;
@@ -166,7 +168,8 @@ const Content = styled.div`
     border: 1px solid #ced4da;
     border-radius: 4px;
     outline-color: transparent;
-    transition: outline-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: outline-color 0.15s ease-in-out,
+      box-shadow 0.15s ease-in-out;
     margin: 8px 0 4px 0;
 
     &:focus {
@@ -174,7 +177,7 @@ const Content = styled.div`
     }
   }
 
-  input[type="submit"] {
+  input[type='submit'] {
     display: inline-block;
     margin-bottom: 0;
     font-weight: 400;

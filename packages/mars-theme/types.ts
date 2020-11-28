@@ -1,6 +1,6 @@
-import { Package, Action } from "frontity/types";
-import { AutoPrefetch } from "@frontity/components/link/types";
-import Html2React from "@frontity/html2react/types";
+import { Package, Action } from 'frontity/types';
+import { AutoPrefetch } from '@frontity/components/link/types';
+import Html2React from '@frontity/html2react/types';
 
 /**
  * A Frontity starter theme designed to learn Frontity.
@@ -9,7 +9,7 @@ interface MarsTheme extends Package {
   /**
    * The name of this package.
    */
-  name: "@frontity/mars-theme";
+  name: '@frontity/mars-theme';
 
   /**
    * Root components exposed by this package.
@@ -95,7 +95,7 @@ interface MarsTheme extends Package {
       /**
        * The Html2React processors.
        */
-      processors: Html2React["libraries"]["html2react"]["processors"];
+      processors: Html2React['libraries']['html2react']['processors'];
     };
   };
 }
