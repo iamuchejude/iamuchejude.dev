@@ -1,28 +1,17 @@
 {
   "name": "@iamuchejude/website",
   "version": "0.1.0",
-  "description": "A fontity theme for Jude's website",
-  "homepage": "https://iamuchejude.dev",
+  "private": true,
+  "description": "A frontity theme for Jude's website",
   "keywords": [
-    "website",
+    "frontity",
     "frontity-theme"
   ],
+  "author": "Uche Jude <hello@iamuchejude.dev>",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/iamuchejude/iamuchejude.dev"
-  },
-  "bugs": {
-    "url": "https://github.com/iamuchejude/iamuchejude.dev/issues"
-  },
   "dependencies": {
     "@frontity/components": "^1.6.0",
     "@frontity/html2react": "^1.5.0",
-    "@frontity/router": "^1.1.2",
-    "@frontity/source": "^1.4.0",
     "frontity": "^1.13.0"
-  },
-  "devDependencies": {
-    "@types/react": "^17.0.0"
   }
 }
