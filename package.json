@@ -24,7 +24,7 @@
     "@frontity/wp-source": "^1.10.0",
     "@frontity/tiny-router": "^1.2.3",
     "@frontity/html2react": "^1.5.0",
-    "@iamuchejude/website-theme": "./packages/website-theme"
+    "@iamuchejude/website": "./packages/website"
   },
   "devDependencies": {
     "prettier": "^2.2.1"

@@ -5,17 +5,18 @@ const settings: Settings = {
   state: {
     frontity: {
       url: 'https://iamuchejude.dev',
-      title: 'Website',
-      description: "Jude's website",
+      title: 'Uche Jude',
+      description: 'Web Frontend Engineer',
     },
   },
   packages: [
-    { name: '@iamuchejude/website-theme' },
+    '@iamuchejude/website',
     {
       name: '@frontity/wp-source',
       state: {
         source: {
           url: 'http://iamuchejude.local',
+          homepage: '/home/',
         },
       },
     },

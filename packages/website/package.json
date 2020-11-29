@@ -1,5 +1,5 @@
 {
-  "name": "@iamuchejude/website-theme",
+  "name": "@iamuchejude/website",
   "version": "0.1.0",
   "description": "A fontity theme for Jude's website",
   "homepage": "https://iamuchejude.dev",
@@ -18,6 +18,8 @@
   "dependencies": {
     "@frontity/components": "^1.6.0",
     "@frontity/html2react": "^1.5.0",
+    "@frontity/router": "^1.1.2",
+    "@frontity/source": "^1.4.0",
     "frontity": "^1.13.0"
   },
   "devDependencies": {
