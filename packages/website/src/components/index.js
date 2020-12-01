@@ -1,8 +1,8 @@
-import React, { Fragment } from 'react';
-import { connect, styled, Global, Head, keyframes } from 'frontity';
+import { connect, styled, Global, Head } from 'frontity';
 import Switch from '@frontity/components/switch';
+import React, { Fragment } from 'react';
 import { globalStyle, fadeIn } from '../styles';
-import Loading from './loading';
+import Loader from './loading';
 import Page from './page';
 
 const Theme = ({ state }) => {
@@ -25,7 +25,7 @@ const Theme = ({ state }) => {
 
       <Main>
         <Switch>
-          <Loading when={data.isFetching} />
+          <Loader when={data.isFetching} />
           <Page when={data.isHome} />
           <Error when={data.isError} />
         </Switch>
