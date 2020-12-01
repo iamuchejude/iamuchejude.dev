@@ -1,3 +1,3 @@
 # iamuchejude.dev
 
-> Jude's website and blog
+> Jude's personal website
