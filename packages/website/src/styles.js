@@ -1,4 +1,4 @@
-import { css } from 'frontity';
+import { css, keyframes } from 'frontity';
 
 export const globalStyle = css`
   :root {
@@ -46,4 +46,19 @@ export const questStyle = css`
     width: 100%;
     height: 100%;
   }
+`;
+
+export const fadeIn = keyframes`
+  0% { opacity: 0 }
+  100% { opacity: 1 }
+`;
+
+export const spin = keyframes`
+  from { transform:rotate(0deg) }
+  to { transform:rotate(360deg) }
+`;
+
+export const fadeOut = keyframes`
+  0% { opacity: 1 }
+  100% { opacity: 0 }
 `;

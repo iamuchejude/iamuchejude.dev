@@ -1,8 +1,7 @@
 import React, { Fragment } from 'react';
-import { connect, styled, Global, Head } from 'frontity';
+import { connect, styled, Global, Head, keyframes } from 'frontity';
 import Switch from '@frontity/components/switch';
-
-import { globalStyle } from '../styles';
+import { globalStyle, fadeIn } from '../styles';
 import Loading from './loading';
 import Page from './page';
 
@@ -38,6 +37,11 @@ const Theme = ({ state }) => {
 const Main = styled.main`
   max-width: 600px;
   width: 100%;
+
+  p,
+  figure {
+    animation: ${fadeIn} 1s linear;
+  }
 `;
 
 export default connect(Theme);

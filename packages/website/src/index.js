@@ -7,8 +7,6 @@ const website = {
   roots: {
     theme: Theme,
   },
-  state: {},
-  actions: {},
   libraries: {
     html2react: {
       processors: [link, externalLinks, quest],
