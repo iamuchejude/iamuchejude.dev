@@ -2,7 +2,7 @@ import { connect, styled, Global, Head } from 'frontity';
 import Switch from '@frontity/components/switch';
 import React, { Fragment } from 'react';
 import { globalStyle, fadeIn } from '../styles';
-import Loader from './loading';
+import Loader from './loader';
 import Page from './page';
 
 const Theme = ({ state }) => {
