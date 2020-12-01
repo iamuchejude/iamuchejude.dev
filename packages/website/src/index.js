@@ -1,8 +1,9 @@
-import link from "@frontity/html2react/processors/link";
-import Theme from "./components/theme";
+import link from '@frontity/html2react/processors/link';
+import { externalLinks, quest } from './precessors';
+import Theme from './components';
 
 const website = {
-  name: "@iamuchejude/theme",
+  name: '@iamuchejude/theme',
   roots: {
     theme: Theme,
   },
@@ -10,7 +11,7 @@ const website = {
   actions: {},
   libraries: {
     html2react: {
-      processors: [link],
+      processors: [link, externalLinks, quest],
     },
   },
 };
