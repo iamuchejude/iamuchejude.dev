@@ -1,10 +1,6 @@
 import { css, keyframes } from 'frontity';
 
 export const globalStyle = css`
-  :root {
-    --primary-color: #000;
-  }
-
   * {
     box-sizing: border-box;
   }
@@ -17,19 +13,26 @@ export const globalStyle = css`
     padding: 4rem 8rem;
     font-family: 'Josefin Sans', sans-serif;
     --webkit-font-smoothing: antialiased;
+
+    @media screen and (max-width: 900px) {
+      padding: 3rem 6rem;
+    }
+
+    @media screen and (max-width: 700px) {
+      padding: 2rem 1.6rem;
+    }
   }
 `;
 
 export const externalLinksStyle = css`
-  text-decoration: none;
-  white-space: nowrap;
-  position: relative;
   border-bottom: 1px solid #000;
+  text-decoration: none;
   transition: all 0.4s;
-  color: inherit;
+  white-space: default;
+  position: relative;
+  color: #000;
 
   &:hover {
-    color: #000;
     border: none;
     background-color: rgba(0, 0, 0, 0.15);
   }
