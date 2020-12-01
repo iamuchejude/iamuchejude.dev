@@ -5,7 +5,7 @@ export const externalLinks = {
   name: 'external-links',
   priority: 1,
   test: ({ node }) =>
-    node.component === 'a' && String(node.props?.href).startsWith('http'),
+    node.component === 'a' && /^[http|mailto]/i.test(String(node.props?.href)),
   processor: ({ node }) => ({
     ...node,
     props: {

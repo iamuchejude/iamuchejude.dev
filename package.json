@@ -1,8 +1,8 @@
 {
   "name": "iamuchejude.dev",
   "private": true,
-  "description": "Jude's personal website",
   "version": "0.1.0",
+  "description": "Jude's personal website",
   "author": "Uche Jude <hello@iamuchejude.dev>",
   "keywords": [
     "website",
