@@ -1,17 +1,19 @@
 import { css, keyframes } from 'frontity';
 
 export const globalStyle = css`
-  * {
+  *,
+  *::before,
+  *::after {
     box-sizing: border-box;
   }
 
   body {
-    font-size: 20px;
-    font-weight: 300;
+    font-size: 18px;
+    font-weight: 200;
     font-style: normal;
-    line-height: 1.6;
+    line-height: 1.45;
     padding: 4rem 8rem;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Arima Madurai', cursive;
     --webkit-font-smoothing: antialiased;
 
     @media screen and (max-width: 900px) {
@@ -25,24 +27,24 @@ export const globalStyle = css`
 `;
 
 export const externalLinksStyle = css`
+  transition: box-shadow 0.3s ease 0s;
   border-bottom: 1px solid #000;
   text-decoration: none;
-  transition: all 0.4s;
   white-space: default;
   position: relative;
   color: #000;
 
   &:hover {
     border: none;
-    background-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px -1.3em 0px inset;
   }
 `;
 
 /* crest <== quest ==> logo */
 export const questStyle = css`
   margin: 0;
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   margin-bottom: 3rem;
 
   img {
@@ -52,13 +54,13 @@ export const questStyle = css`
 `;
 
 export const fadeIn = keyframes`
-  0% { opacity: 0 }
-  100% { opacity: 1 }
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 `;
 
 export const spin = keyframes`
-  from { transform:rotate(0deg) }
-  to { transform:rotate(360deg) }
+  from { transform:rotate(0deg); }
+  to { transform:rotate(360deg); }
 `;
 
 export const fadeOut = keyframes`
