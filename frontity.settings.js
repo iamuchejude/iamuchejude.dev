@@ -13,7 +13,7 @@ const settings = {
       name: '@frontity/wp-source',
       state: {
         source: {
-          url: process.env.SOURCE_URL,
+          url: 'https://app-5fba9a04c1ac1813b0e8d78c.closte.com',
           homepage: '/home/',
         },
       },
