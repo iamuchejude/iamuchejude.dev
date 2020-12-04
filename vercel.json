@@ -5,5 +5,19 @@
       "src": "package.json",
       "use": "@frontity/now"
     }
+  ],
+  "redirects": [
+    {
+      "source": "/github",
+      "destination": "https://github.com/iamuchejude"
+    },
+    {
+      "source": "/linkedin",
+      "destination": "https://linkedin.com/in/iamuchejude"
+    },
+    {
+      "source": "/twitter",
+      "destination": "https://twitter.com/iamuchejude"
+    }
   ]
 }
