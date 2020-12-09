@@ -9,15 +9,18 @@
   "redirects": [
     {
       "source": "/github",
-      "destination": "https://github.com/iamuchejude"
+      "destination": "https://github.com/iamuchejude",
+      "permanent": false
     },
     {
       "source": "/linkedin",
-      "destination": "https://linkedin.com/in/iamuchejude"
+      "destination": "https://linkedin.com/in/iamuchejude",
+      "permanent": false
     },
     {
       "source": "/twitter",
-      "destination": "https://twitter.com/iamuchejude"
+      "destination": "https://twitter.com/iamuchejude",
+      "permanent": false
     }
   ]
 }
