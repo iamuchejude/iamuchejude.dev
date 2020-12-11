@@ -14,7 +14,8 @@ const settings = {
       state: {
         source: {
           url: 'https://app-5fba9a04c1ac1813b0e8d78c.closte.com',
-          homepage: '/home/',
+          homepage: '/home',
+          postsPage: '/writing',
         },
       },
     },
