@@ -1,69 +1,91 @@
-import { css, keyframes } from 'frontity';
+import { css } from 'frontity';
 
 export const globalStyle = css`
+  :root {
+    --text-color: #fff;
+    --base-font-size: 16px;
+    --background-color: #000;
+    --content-width: 1000px;
+  }
+
   *,
   *::before,
   *::after {
     box-sizing: border-box;
+    margin: 0;
   }
 
   body {
-    font-size: 18px;
     font-weight: 200;
     font-style: normal;
-    line-height: 1.45;
-    padding: 4rem 8rem;
-    font-family: 'Arima Madurai', cursive;
-    --webkit-font-smoothing: antialiased;
+    line-height: 1.6;
+    color: var(--text-color);
+    font-family: 'Barlow', sans-serif;
+    font-size: var(--base-font-size);
+    background: var(--background-color);
 
-    @media screen and (max-width: 900px) {
-      padding: 3rem 6rem;
+    img {
+      max-width: 100%;
     }
 
-    @media screen and (max-width: 700px) {
-      padding: 2rem 1.6rem;
+    .introduction {
+      height: 65vh;
+      margin: 0 auto;
+      position: relative;
+      width: var(--content-width);
+
+      display: grid;
+      grid-gap: 4rem;
+      grid-template-columns: 1fr 300px 1fr;
+
+      figure {
+        position: relative;
+        width: 300px;
+
+        :after {
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          content: ' ';
+          position: absolute;
+          background: linear-gradient(to bottom, transparent, #000);
+        }
+      }
+
+      > div {
+        :first-child {
+          align-self: flex-start;
+
+          h3 {
+            font-size: 2rem;
+            line-height: 30px;
+            margin-bottom: 1rem;
+          }
+
+          p:first-child {
+            display: flex;
+            position: relative;
+            align-items: center;
+
+            :before {
+              height: 1px;
+              content: ' ';
+              width: 0.5em;
+              background: #fff;
+              margin-right: 0.2rem;
+            }
+          }
+        }
+
+        :nth-child(2) {
+          align-self: center;
+        }
+
+        :last-child {
+          align-self: flex-end;
+        }
+      }
     }
   }
-`;
-
-export const externalLinksStyle = css`
-  transition: box-shadow 0.3s ease 0s;
-  border-bottom: 1px solid #000;
-  text-decoration: none;
-  white-space: default;
-  position: relative;
-  color: #000;
-
-  &:hover {
-    border: none;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px -1.3em 0px inset;
-  }
-`;
-
-/* crest <== quest ==> logo */
-export const questStyle = css`
-  margin: 0;
-  width: 60px;
-  height: 60px;
-  margin-bottom: 3rem;
-
-  img {
-    width: 100%;
-    height: 100%;
-  }
-`;
-
-export const fadeIn = keyframes`
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-`;
-
-export const spin = keyframes`
-  from { transform:rotate(0deg); }
-  to { transform:rotate(360deg); }
-`;
-
-export const fadeOut = keyframes`
-  0% { opacity: 1 }
-  100% { opacity: 0 }
 `;

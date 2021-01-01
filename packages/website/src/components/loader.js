@@ -1,11 +1,10 @@
-import { styled, connect } from 'frontity';
-import { fadeOut, spin } from '../styles';
+import { connect } from 'frontity';
 
 const Loader = ({ state }) => {
   const data = state.source.get(state.router.link);
 
   return (
-    <Spinner
+    <SVG
       fill="none"
       width="100"
       height="100"
@@ -23,16 +22,8 @@ const Loader = ({ state }) => {
         stroke="black"
         strokeWidth="10"
       />
-    </Spinner>
+    </SVG>
   );
 };
-
-const Spinner = styled.svg`
-  animation: ${spin} 2s linear infinite;
-
-  &.fade-out {
-    animation: ${fadeOut} 2s linear infinite;
-  }
-`;
 
 export default connect(Loader);

@@ -4,7 +4,7 @@ const settings = {
     frontity: {
       url: 'https://iamuchejude.dev',
       title: 'Uche Jude',
-      description: 'Web Frontend Engineer',
+      description: 'Frontend Engineer',
     },
   },
   packages: [
@@ -13,7 +13,7 @@ const settings = {
       name: '@frontity/wp-source',
       state: {
         source: {
-          url: 'https://app-5fba9a04c1ac1813b0e8d78c.closte.com',
+          url: 'http://localhost:10000/',
           homepage: '/home',
           postsPage: '/writing',
         },

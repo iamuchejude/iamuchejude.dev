@@ -1,5 +1,5 @@
 import link from '@frontity/html2react/processors/link';
-import { externalLinks, quest } from './precessors';
+import image from '@frontity/html2react/processors/image';
 import Theme from './components';
 
 const website = {
@@ -9,7 +9,7 @@ const website = {
   },
   libraries: {
     html2react: {
-      processors: [link, externalLinks, quest],
+      processors: [link, image],
     },
   },
 };
