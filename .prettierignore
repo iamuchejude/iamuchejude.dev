@@ -1,0 +1,5 @@
+.cache/
+node_modules/
+**/*.json
+**/*.md
+.prettierrc

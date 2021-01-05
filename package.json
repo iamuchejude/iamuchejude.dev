@@ -2,7 +2,7 @@
   "name": "iamuchejude.dev",
   "private": true,
   "version": "0.1.0",
-  "description": "Jude's personal website",
+  "description": "Jude's website",
   "author": "Uche Jude <hello@iamuchejude.dev>",
   "license": "MIT",
   "keywords": [
@@ -15,7 +15,8 @@
   },
   "scripts": {
     "develop": "gatsby develop",
-    "build": "gatsby build"
+    "build": "gatsby build",
+    "format": "prettier . --write"
   },
   "repository": {
     "type": "git",
@@ -40,6 +41,7 @@
   "devDependencies": {
     "@types/node": "^14.14.20",
     "@types/react": "^17.0.0",
-    "@types/react-dom": "^17.0.0"
+    "@types/react-dom": "^17.0.0",
+    "prettier": "^2.2.1"
   }
 }
