@@ -1,7 +1,0 @@
-node_modules/
-build/
-.cache/
-
-package-lock.json
-.env
-.vercel
